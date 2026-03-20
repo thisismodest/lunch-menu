@@ -8,6 +8,7 @@ let activeMenuKey = null;
 let activeWeekNumber = null;
 let currentWeekNumber = null;
 let isPreview = false;
+let appDate = null;
 
 function getMonday(date) {
   const d = new Date(date);
@@ -17,15 +18,15 @@ function getMonday(date) {
 }
 
 function getTodayName() {
-  return new Date().toLocaleDateString("en-GB", { weekday: "long" }).toLowerCase();
+  return appDate.toLocaleDateString("en-GB", { weekday: "long" }).toLowerCase();
 }
 
 function getMenuStartDate(filename) {
   return filename.replace(".json", "");
 }
 
-function resolveMenuKeys(now) {
-  const today = now.toISOString().split("T")[0];
+function resolveMenuKeys() {
+  const today = appDate.toISOString().split("T")[0];
   const sorted = [...menuIndex].sort((a, b) => getMenuStartDate(a).localeCompare(getMenuStartDate(b)));
 
   currentMenuKey = null;
@@ -89,9 +90,8 @@ function renderMealContent(meal, baseJacketToppings) {
     </div>`;
 
   const extras = meal.extraJacketToppings || [];
-  const allToppings = [...(baseJacketToppings || []), ...extras];
 
-  if (allToppings.length) {
+  if (baseJacketToppings?.length || extras.length) {
     const baseHTML = (baseJacketToppings || [])
       .map((t) => `<span class="mdst-tag mdst-tag--sm mdst-tag--pill jacket-tag">${t}</span>`)
       .join("");
@@ -145,17 +145,15 @@ function renderPreviewBanner() {
     const label = nextMenu?.label || getMenuStartDate(nextMenuKey);
     banner.innerHTML = `
       <div class="preview-banner">
-        <span class="mdst-p mdst-p--sm">📋 Next menu available: <strong>${label}</strong></span>
+        <span class="mdst-p mdst-p--sm">Next menu available: <strong>${label}</strong></span>
         <button class="mdst-button mdst-button--sm preview-banner-button" onclick="togglePreview()">Preview</button>
       </div>`;
     banner.style.display = "";
   } else if (isPreview) {
-    const currentMenu = menus[currentMenuKey];
-    const label = currentMenu?.label || (currentMenuKey ? getMenuStartDate(currentMenuKey) : "current");
     banner.innerHTML = `
       <div class="preview-banner preview-banner--active">
-        <span class="mdst-p mdst-p--sm">👀 Previewing upcoming menu</span>
-        <button class="mdst-button mdst-button--sm preview-banner-button" onclick="togglePreview()">Back to ${label}</button>
+        <span class="mdst-p mdst-p--sm">Previewing upcoming menu</span>
+        <button class="mdst-button mdst-button--sm preview-banner-button" onclick="togglePreview()">Back to current menu</button>
       </div>`;
     banner.style.display = "";
   } else {
@@ -188,8 +186,7 @@ function resolveActiveWeek() {
   if (!menuData.length) return;
 
   if (!isPreview) {
-    const now = new Date();
-    const monday = getMonday(now);
+    const monday = getMonday(appDate);
     const currentWeek = menuData.find((w) => w.weekStart.includes(monday));
     currentWeekNumber = currentWeek ? currentWeek.week : null;
     activeWeekNumber = currentWeekNumber || menuData[0].week;
@@ -301,7 +298,12 @@ async function fetchJSON(url) {
 
 async function init() {
   const now = new Date();
-  // const now = new Date("2026-04-05");
+  // const now = new Date("2026-04-05"); // between menus — current active, preview banner visible
+  // const now = new Date("2026-04-13"); // switchover day — Summer 2026 becomes active (Week 1)
+  // const now = new Date("2026-06-15"); // mid-summer — Summer 2026 active (Week 3)
+  // const now = new Date("2026-11-01"); // past all menus — "needs updating" message
+
+  appDate = now;
 
   document.getElementById("current-date-display").innerText = now.toLocaleDateString("en-GB", {
     dateStyle: "full",
@@ -328,7 +330,7 @@ async function init() {
   });
   await Promise.all(fetchPromises);
 
-  resolveMenuKeys(now);
+  resolveMenuKeys();
 
   if (!currentMenuKey || !menus[currentMenuKey]) {
     activeMenuKey = null;

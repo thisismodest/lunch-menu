@@ -4,15 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HCL School Lunch Timetable</title>
-    <meta
-      name="description"
-      content="See what's for school dinner today. A simple weekly lunch menu viewer for reception meals provided by HCL."
-    />
+    <meta name="description" content="See what's for school dinner today. A simple weekly lunch menu viewer for meals provided by HCL." />
     <meta name="author" content="Marcus Michaels" />
     <meta name="robots" content="noindex, nofollow" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="modest-ui.min.css" />
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8CNWGBKZHH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-8CNWGBKZHH");
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -31,7 +40,7 @@
           </g>
         </svg>
       </div>
-      <h1 class="mdst-h1">Reception Meals</h1>
+      <h1 class="mdst-h1">School Meals</h1>
       <p class="mdst-p mdst-p--sm mdst-p--muted site-header-subtitle">Today's Lunch Menu</p>
       <div class="site-header-meta">
         <span class="mdst-p mdst-p--sm mdst-p--muted" id="current-date-display"></span>
