@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HCL School Lunch Timetable</title>
+    <meta
+      name="description"
+      content="See what's for school dinner today. A simple weekly lunch menu viewer for reception meals provided by HCL."
+    />
+    <meta name="author" content="Marcus Michaels" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="modest-ui.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true">
+          <g transform="translate(8, 3)">
+            <line x1="0" y1="0" x2="0" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <line x1="3" y1="0" x2="3" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <line x1="6" y1="0" x2="6" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <rect x="-1" y="9" width="8" height="4" rx="1.5" fill="currentColor" />
+            <line x1="3" y1="13" x2="3" y2="26" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+          </g>
+          <g transform="translate(21, 3)">
+            <path d="M0 0 C0 0, 3.5 0, 3.5 5 L3.5 13 L0 13 Z" fill="currentColor" />
+            <line x1="1.75" y1="13" x2="1.75" y2="26" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+          </g>
+        </svg>
+      </div>
+      <h1 class="mdst-h1">Reception Meals</h1>
+      <p class="mdst-p mdst-p--sm mdst-p--muted site-header-subtitle">Today's Lunch Menu</p>
+      <div class="site-header-meta">
+        <span class="mdst-p mdst-p--sm mdst-p--muted" id="current-date-display"></span>
+        <span class="site-header-meta-divider"></span>
+        <span id="week-label"></span>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <div id="preview-banner" style="display: none"></div>
+      <div class="week-selector" id="week-selector"></div>
+      <div id="menu-container"></div>
+    </main>
+
+    <footer class="site-footer">
+      <p class="mdst-p mdst-p--sm mdst-p--muted site-footer-text">
+        This is <em>just</em> a handy tool made by an easily confused dad.<br />
+        It is not affiliated with any school or HCL, may not be accurate, and no responsibility is accepted for its content.
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

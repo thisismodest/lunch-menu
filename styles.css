@@ -1,0 +1,333 @@
+:root {
+  --mdst-color-fg: #3b2e2a;
+  --mdst-color-bg: #fff7f3;
+  --mdst-color-border: #eacfc4;
+  --mdst-color-muted: #9c8178;
+  --mdst-color-subtle: #fceee8;
+  --mdst-color-focus: #e8734a;
+  --mdst-color-error: #d95a4e;
+  --mdst-color-success: #5aab7b;
+  --mdst-radius: 0.75rem;
+  --mdst-border-width: 1px;
+
+  --mdst-button-hover-bg: var(--mdst-color-subtle);
+  --mdst-button-hover-color: var(--mdst-color-fg);
+  --mdst-button-hover-border: var(--mdst-color-fg);
+
+  --color-red: #d95a4e;
+  --color-green: #5aab7b;
+  --color-yellow: #d4a017;
+}
+
+/* Layout */
+
+body {
+  font-family: var(--mdst-font-sans);
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-main {
+  max-width: 72rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--mdst-space-md);
+}
+
+/* Header */
+
+.site-header {
+  text-align: center;
+  padding: var(--mdst-space-xl) var(--mdst-space-md);
+  margin-bottom: var(--mdst-space-lg);
+  background: linear-gradient(180deg, var(--mdst-color-subtle) 0%, var(--mdst-color-bg) 100%);
+  border-bottom: var(--mdst-border-width) solid var(--mdst-color-border);
+}
+
+.site-header-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 auto var(--mdst-space-sm);
+}
+
+.site-header-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.site-header h1 {
+  letter-spacing: -0.025em;
+}
+
+.site-header-subtitle {
+  margin-bottom: 0;
+}
+
+.site-header-meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--mdst-space-sm);
+  flex-wrap: wrap;
+  margin-top: var(--mdst-space-md);
+}
+
+.site-header-meta-divider {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--mdst-color-border);
+  flex-shrink: 0;
+}
+
+/* Footer */
+
+.site-footer {
+  text-align: center;
+  padding: var(--mdst-space-lg) var(--mdst-space-md);
+  margin-top: auto;
+  border-top: var(--mdst-border-width) solid var(--mdst-color-border);
+}
+
+.site-footer-text {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+/* Week selector */
+
+.week-selector {
+  display: flex;
+  gap: var(--mdst-space-sm);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: var(--mdst-space-lg);
+}
+
+.week-selector .mdst-button.week-button--active {
+  background: var(--mdst-color-border);
+  color: var(--mdst-color-fg);
+  border-color: var(--mdst-color-border);
+}
+
+.week-selector-current {
+  margin-left: 0.25rem;
+}
+
+/* Week row */
+
+.week-row {
+  display: flex;
+  gap: var(--mdst-space-md);
+  margin-bottom: var(--mdst-space-lg);
+  align-items: stretch;
+}
+
+/* Day cards */
+
+.day-card {
+  border: var(--mdst-border-width) solid var(--mdst-color-border);
+  border-radius: var(--mdst-radius);
+  padding: var(--mdst-space-md);
+  flex: 1;
+  min-width: 0;
+  transition: opacity 150ms ease;
+  container-type: inline-size;
+}
+
+.day-card--today {
+  border: 2px solid var(--mdst-color-fg);
+  background: var(--mdst-color-subtle);
+}
+
+.day-card--past {
+  opacity: 0.45;
+}
+
+.day-card--past:hover {
+  opacity: 0.75;
+}
+
+.day-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--mdst-space-sm);
+  flex-wrap: wrap;
+  gap: var(--mdst-space-xs);
+}
+
+.day-card-header h4 {
+  margin: 0;
+}
+
+.day-card-divider {
+  margin: 0 0 var(--mdst-space-sm) 0;
+}
+
+/* Meal rows */
+
+.meal-row {
+  display: flex;
+  align-items: baseline;
+  gap: var(--mdst-space-sm);
+  padding: var(--mdst-space-xs) 0;
+}
+
+.meal-row + .meal-row {
+  border-top: var(--mdst-border-width) solid var(--mdst-color-border);
+}
+
+.meal-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  position: relative;
+  top: -1px;
+}
+
+.meal-dot--red {
+  background: var(--color-red);
+}
+
+.meal-dot--green {
+  background: var(--color-green);
+}
+
+.meal-dot--yellow {
+  background: var(--color-yellow);
+}
+
+.meal-dot--muted {
+  background: var(--mdst-color-muted);
+}
+
+.meal-label {
+  font-size: var(--mdst-text-xs);
+  color: var(--mdst-color-muted);
+  min-width: 3.5rem;
+  flex-shrink: 0;
+}
+
+.meal-label--auto {
+  min-width: auto;
+}
+
+.meal-value {
+  font-size: var(--mdst-text-sm);
+}
+
+/* Jacket potato */
+
+.jacket-section {
+  margin-top: var(--mdst-space-sm);
+  padding-top: var(--mdst-space-sm);
+  border-top: var(--mdst-border-width) solid var(--mdst-color-border);
+}
+
+.jacket-header {
+  display: flex;
+  align-items: center;
+  gap: var(--mdst-space-xs);
+  margin-bottom: var(--mdst-space-xs);
+}
+
+.jacket-toppings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.jacket-tag {
+  border-color: var(--color-yellow);
+  color: var(--color-yellow);
+}
+
+.jacket-tag--extra {
+  background: var(--color-yellow);
+  border-color: var(--color-yellow);
+  color: #fff;
+}
+
+/* Key */
+
+.key-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* Message block (empty states, weekend, update needed) */
+
+.message-block {
+  text-align: center;
+  padding: var(--mdst-space-xl) 0;
+}
+
+.message-block--weekend {
+  padding: 0 0 var(--mdst-space-lg) 0;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .week-row {
+    flex-direction: column;
+  }
+}
+
+/* Preview banner */
+
+.preview-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--mdst-space-md);
+  flex-wrap: wrap;
+  padding: var(--mdst-space-sm) var(--mdst-space-md);
+  border: var(--mdst-border-width) solid var(--mdst-color-border);
+  border-radius: var(--mdst-radius);
+  margin-bottom: var(--mdst-space-lg);
+  background: var(--mdst-color-subtle);
+}
+
+.preview-banner--active {
+  border-color: var(--color-yellow);
+  background: #fdf8ec;
+}
+
+.preview-banner .mdst-p {
+  margin: 0;
+}
+
+.preview-banner-button {
+  flex-shrink: 0;
+}
+
+/* Warning tag (used for preview label) */
+
+.mdst-tag--warning {
+  background: #fdf8ec;
+  border-color: var(--color-yellow);
+  color: #8a6d00;
+}
+
+@container (max-width: 200px) {
+  .meal-row {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .meal-label {
+    min-width: auto;
+  }
+
+  .meal-value {
+    flex-basis: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Fork -->
+  <g transform="translate(8, 3)">
+    <line x1="0" y1="0" x2="0" y2="10" stroke="#333" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="3" y1="0" x2="3" y2="10" stroke="#333" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="6" y1="0" x2="6" y2="10" stroke="#333" stroke-width="1.5" stroke-linecap="round"/>
+    <rect x="-1" y="9" width="8" height="4" rx="1.5" fill="#333"/>
+    <line x1="3" y1="13" x2="3" y2="26" stroke="#333" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <!-- Knife -->
+  <g transform="translate(21, 3)">
+    <path d="M0 0 C0 0, 3.5 0, 3.5 5 L3.5 13 L0 13 Z" fill="#333"/>
+    <line x1="1.75" y1="13" x2="1.75" y2="26" stroke="#333" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>
