@@ -186,8 +186,10 @@ function resolveActiveWeek() {
   if (!menuData.length) return;
 
   if (!isPreview) {
+    // Normalise both today and each weekStart to their Monday so that
+    // weeks starting on Tuesday (due to bank holidays) still match.
     const monday = getMonday(appDate);
-    const currentWeek = menuData.find((w) => w.weekStart.includes(monday));
+    const currentWeek = menuData.find((w) => w.weekStart.some((ws) => getMonday(ws) === monday));
     currentWeekNumber = currentWeek ? currentWeek.week : null;
     activeWeekNumber = currentWeekNumber || menuData[0].week;
   } else {
