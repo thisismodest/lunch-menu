@@ -14,8 +14,10 @@ A simple, static page that shows the weekly school lunch menu provided by HCL. B
 | `menus/`                      | Menu data as dated JSON files                                                         |
 | `menus/index.json`            | Auto-generated manifest listing all menu files                                        |
 | `scripts/build-menu-index.sh` | Script to regenerate `menus/index.json` from the menu files                           |
+| `scripts/build-menu-xml.sh`   | Script to regenerate `menu.xml` from the menu files                                   |
 | `scripts/build-modest-ui.sh`  | Script to rebuild `modest-ui.min.css` from the `mdst-ui` npm package                  |
-| `.githooks/pre-commit`        | Pre-commit hook that runs the index script when menu files are staged                 |
+| `.githooks/pre-commit`        | Pre-commit hook that runs both scripts when menu files are staged                     |
+| `menu.xml`                    | Auto-generated menu for every school day by date, for tools that can't run JavaScript |
 
 ## How it works
 
@@ -78,7 +80,7 @@ git add menus/2026-11-02.json
 git commit -m "Add Autumn 2026 menu"
 ```
 
-The pre-commit hook will automatically regenerate `menus/index.json` and include it in the commit. Push, and you're done — the site will show a preview banner immediately, and switch over on the start date.
+The pre-commit hook will automatically regenerate `menus/index.json` and `menu.xml` and include them in the commit. Push, and you're done — the site will show a preview banner immediately, and switch over on the start date.
 
 ### Enabling the pre-commit hook
 
@@ -88,15 +90,22 @@ The hook lives in `.githooks/` so it's version-controlled. Git doesn't pick it u
 git config core.hooksPath .githooks
 ```
 
-### Manually rebuilding the index
+### Manually rebuilding the index and XML
 
-If needed, you can regenerate `menus/index.json` at any time:
+If needed, you can regenerate both at any time:
 
 ```sh
 sh scripts/build-menu-index.sh
+sh scripts/build-menu-xml.sh
 ```
 
-This scans `menus/` for all `*.json` files (excluding `index.json`), sorts them, and writes the manifest. Requires `jq`.
+The index script scans `menus/` for all `*.json` files (excluding `index.json`), sorts them, and writes the manifest. Both require `jq`.
+
+### menu.xml (for AI assistants and other tools)
+
+The site draws the menu with JavaScript, so tools that only download the HTML (like most AI assistants' fetch tools) see an empty page. `menu.xml` lists every school day from the day it was built onwards, by date, with that day's menu, so a tool can look up a date directly. The page points to it in two places: a line in the menu container that `app.js` replaces, and a `<link rel="alternate">` in `<head>`.
+
+It's rebuilt whenever a menu file is committed. Days before then drop off, and when a newer menu starts it takes over from the older one's dates.
 
 ## Testing a future date
 

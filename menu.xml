@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  School lunch menu (HCL), one <day> per school day, by date.
+  Days that are not listed (weekends, holidays, INSET days) have no school lunch.
+  "main" is Main Meal 1 and "veggie" is Main Meal 2. (v) = vegetarian, (Ve) = vegan.
+  Not affiliated with any school or HCL, and may not be accurate.
+  Generated from menus/*.json by scripts/build-menu-xml.sh.
+-->
+<lunch-menus source="https://thisismodest.com/lunch-menu/">
+  <day date="2026-10-19" weekday="Monday" menu="Summer 2026" week="2">
+    <main>Chicken Curry</main>
+    <veggie>Plant-Based Sausages &amp; Gravy (Ve)</veggie>
+    <sides>Brown &amp; White Rice or Potato Wedges</sides>
+    <dessert>Apple Tart &amp; Ice Cream (v)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Beans &amp; Cheese (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-10-20" weekday="Tuesday" menu="Summer 2026" week="2">
+    <main>Plant-Based Meatballs with Tomato Sauce (Ve)</main>
+    <veggie>Mac 'n' Cheese (v)</veggie>
+    <sides>Pasta or Herby Garlic Bread</sides>
+    <dessert>Fresh Fruit Wedges (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Beans &amp; Cheese (v)</jacket-potato>
+  </day>
+  <day date="2026-10-21" weekday="Wednesday" menu="Summer 2026" week="2">
+    <main>Roast Beef with Yorkshire Pudding &amp; Gravy</main>
+    <veggie>Quorn Fillet with Stuffing &amp; Gravy (Ve)</veggie>
+    <sides>Roast Potatoes or Wholemeal Pasta</sides>
+    <dessert>Fresh Fruit Jelly (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Beans &amp; Cheese (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-10-22" weekday="Thursday" menu="Summer 2026" week="2">
+    <main>Chicken Pie &amp; Gravy</main>
+    <veggie>Mild Bean Chilli (Ve)</veggie>
+    <sides>New Potatoes or Brown &amp; White Rice</sides>
+    <dessert>Strawberry Mousse (v)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Beans &amp; Cheese (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-10-23" weekday="Friday" menu="Summer 2026" week="2">
+    <main>Battered Fish</main>
+    <veggie>Margherita Pizza (v)</veggie>
+    <sides>Chips or Tricolour Pasta</sides>
+    <dessert>Chocolate Muffin (v)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Beans &amp; Cheese (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-11-02" weekday="Monday" menu="Winter 2026" week="1">
+    <main>Pork Sausages &amp; Gravy</main>
+    <veggie>Sweet Potato &amp; Chickpea Curry (Ve)</veggie>
+    <sides>Mashed Potatoes or Brown &amp; White Rice</sides>
+    <dessert>Oat &amp; Raisin Cookie (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-11-03" weekday="Tuesday" menu="Winter 2026" week="1">
+    <main>Mexican Bean Burrito (v)</main>
+    <veggie>Mac 'n' Cheese (v)</veggie>
+    <sides>Diced Potatoes or Herby Garlic Bread</sides>
+    <dessert>Fresh Fruit Wedges (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v)</jacket-potato>
+  </day>
+  <day date="2026-11-04" weekday="Wednesday" menu="Winter 2026" week="1">
+    <main>Roast Chicken with Stuffing &amp; Gravy</main>
+    <veggie>Roast Quorn Fillet with Stuffing &amp; Gravy (Ve)</veggie>
+    <sides>Roast Potatoes or Wholemeal Pasta</sides>
+    <dessert>Fresh Fruit Jelly (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-11-05" weekday="Thursday" menu="Winter 2026" week="1">
+    <main>Chicken Pie &amp; Gravy</main>
+    <veggie>Breaded Bean &amp; Vegetable Grill (Ve)</veggie>
+    <sides>Mashed Potatoes or Pasta</sides>
+    <dessert>Apple Crumble &amp; Custard (v)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-11-06" weekday="Friday" menu="Winter 2026" week="1">
+    <main>Fish Fillet Fingers</main>
+    <veggie>Margherita Pizza (v)</veggie>
+    <sides>Chips or Tricolour Pasta</sides>
+    <dessert>Chocolate Brick Wall (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-11-09" weekday="Monday" menu="Winter 2026" week="2">
+    <main>Chicken &amp; Sweetcorn Meatballs with Sweet &amp; Tangy Sauce</main>
+    <veggie>Sunshine Eggs with Baked Beans (v)</veggie>
+    <sides>Brown &amp; White Rice or Potato Wedges</sides>
+    <dessert>Shortbread (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-11-10" weekday="Tuesday" menu="Winter 2026" week="2">
+    <main>Chicken Curry</main>
+    <veggie>Cheese Pinwheel (v)</veggie>
+    <sides>Brown &amp; White Rice or Diced Potatoes</sides>
+    <dessert>Fresh Fruit Wedges (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-11-11" weekday="Wednesday" menu="Winter 2026" week="2">
+    <main>Roast Beef with Yorkshire Pudding &amp; Gravy</main>
+    <veggie>Quorn Pieces with Yorkshire Pudding &amp; Gravy (v)</veggie>
+    <sides>Roast Potatoes or Wholemeal Pasta</sides>
+    <dessert>Fresh Fruit Jelly (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-11-12" weekday="Thursday" menu="Winter 2026" week="2">
+    <main>Quorn Burger (v)</main>
+    <veggie>Veggie Bolognese (Ve)</veggie>
+    <sides>Potato Wedges or Spaghetti</sides>
+    <dessert>Pear &amp; Chocolate Sponge &amp; Chocolate Custard</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v)</jacket-potato>
+  </day>
+  <day date="2026-11-13" weekday="Friday" menu="Winter 2026" week="2">
+    <main>Battered Fish</main>
+    <veggie>Margherita Pizza (v)</veggie>
+    <sides>Potato Wedges or Tricolour Pasta</sides>
+    <dessert>Jammy Cookie (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Salmon Mayo, Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-11-16" weekday="Monday" menu="Winter 2026" week="3">
+    <main>Beef Bolognese</main>
+    <veggie>Vegan Quorn Sausage &amp; Gravy (Ve)</veggie>
+    <sides>Spaghetti or Potato Wedges</sides>
+    <dessert>Fresh Fruit Wedges (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-11-17" weekday="Tuesday" menu="Winter 2026" week="3">
+    <main>Quorn Hotdog (v)</main>
+    <veggie>Roasted Veg Lasagne (v)</veggie>
+    <sides>Diced Potatoes or Herby Garlic Bread</sides>
+    <dessert>Carrot Cake (v)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v)</jacket-potato>
+  </day>
+  <day date="2026-11-18" weekday="Wednesday" menu="Winter 2026" week="3">
+    <main>Roast Chicken with Stuffing &amp; Gravy</main>
+    <veggie>Beany Pasta Bake (Ve)</veggie>
+    <sides>Roast Potatoes or Wholemeal Pasta</sides>
+    <dessert>Fresh Fruit Jelly (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-11-19" weekday="Thursday" menu="Winter 2026" week="3">
+    <main>Beef Burger</main>
+    <veggie>Baked Bean Slice (Ve)</veggie>
+    <sides>Diced Potatoes or Pasta</sides>
+    <dessert>Apple Charlotte Pudding &amp; Custard (v)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-11-20" weekday="Friday" menu="Winter 2026" week="3">
+    <main>Fish Fillet Fingers</main>
+    <veggie>Margherita Pizza (v)</veggie>
+    <sides>Chips or Tricolour Pasta</sides>
+    <dessert>Chocolate Raisin Cookie (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-11-23" weekday="Monday" menu="Winter 2026" week="1">
+    <main>Pork Sausages &amp; Gravy</main>
+    <veggie>Sweet Potato &amp; Chickpea Curry (Ve)</veggie>
+    <sides>Mashed Potatoes or Brown &amp; White Rice</sides>
+    <dessert>Oat &amp; Raisin Cookie (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-11-24" weekday="Tuesday" menu="Winter 2026" week="1">
+    <main>Mexican Bean Burrito (v)</main>
+    <veggie>Mac 'n' Cheese (v)</veggie>
+    <sides>Diced Potatoes or Herby Garlic Bread</sides>
+    <dessert>Fresh Fruit Wedges (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v)</jacket-potato>
+  </day>
+  <day date="2026-11-25" weekday="Wednesday" menu="Winter 2026" week="1">
+    <main>Roast Chicken with Stuffing &amp; Gravy</main>
+    <veggie>Roast Quorn Fillet with Stuffing &amp; Gravy (Ve)</veggie>
+    <sides>Roast Potatoes or Wholemeal Pasta</sides>
+    <dessert>Fresh Fruit Jelly (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-11-26" weekday="Thursday" menu="Winter 2026" week="1">
+    <main>Chicken Pie &amp; Gravy</main>
+    <veggie>Breaded Bean &amp; Vegetable Grill (Ve)</veggie>
+    <sides>Mashed Potatoes or Pasta</sides>
+    <dessert>Apple Crumble &amp; Custard (v)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-11-27" weekday="Friday" menu="Winter 2026" week="1">
+    <main>Fish Fillet Fingers</main>
+    <veggie>Margherita Pizza (v)</veggie>
+    <sides>Chips or Tricolour Pasta</sides>
+    <dessert>Chocolate Brick Wall (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-11-30" weekday="Monday" menu="Winter 2026" week="2">
+    <main>Chicken &amp; Sweetcorn Meatballs with Sweet &amp; Tangy Sauce</main>
+    <veggie>Sunshine Eggs with Baked Beans (v)</veggie>
+    <sides>Brown &amp; White Rice or Potato Wedges</sides>
+    <dessert>Shortbread (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-12-01" weekday="Tuesday" menu="Winter 2026" week="2">
+    <main>Chicken Curry</main>
+    <veggie>Cheese Pinwheel (v)</veggie>
+    <sides>Brown &amp; White Rice or Diced Potatoes</sides>
+    <dessert>Fresh Fruit Wedges (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-12-02" weekday="Wednesday" menu="Winter 2026" week="2">
+    <main>Roast Beef with Yorkshire Pudding &amp; Gravy</main>
+    <veggie>Quorn Pieces with Yorkshire Pudding &amp; Gravy (v)</veggie>
+    <sides>Roast Potatoes or Wholemeal Pasta</sides>
+    <dessert>Fresh Fruit Jelly (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-12-03" weekday="Thursday" menu="Winter 2026" week="2">
+    <main>Quorn Burger (v)</main>
+    <veggie>Veggie Bolognese (Ve)</veggie>
+    <sides>Potato Wedges or Spaghetti</sides>
+    <dessert>Pear &amp; Chocolate Sponge &amp; Chocolate Custard</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v)</jacket-potato>
+  </day>
+  <day date="2026-12-04" weekday="Friday" menu="Winter 2026" week="2">
+    <main>Battered Fish</main>
+    <veggie>Margherita Pizza (v)</veggie>
+    <sides>Potato Wedges or Tricolour Pasta</sides>
+    <dessert>Jammy Cookie (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Salmon Mayo, Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-12-07" weekday="Monday" menu="Winter 2026" week="3">
+    <main>Beef Bolognese</main>
+    <veggie>Vegan Quorn Sausage &amp; Gravy (Ve)</veggie>
+    <sides>Spaghetti or Potato Wedges</sides>
+    <dessert>Fresh Fruit Wedges (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-12-08" weekday="Tuesday" menu="Winter 2026" week="3">
+    <main>Quorn Hotdog (v)</main>
+    <veggie>Roasted Veg Lasagne (v)</veggie>
+    <sides>Diced Potatoes or Herby Garlic Bread</sides>
+    <dessert>Carrot Cake (v)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v)</jacket-potato>
+  </day>
+  <day date="2026-12-09" weekday="Wednesday" menu="Winter 2026" week="3">
+    <main>Roast Chicken with Stuffing &amp; Gravy</main>
+    <veggie>Beany Pasta Bake (Ve)</veggie>
+    <sides>Roast Potatoes or Wholemeal Pasta</sides>
+    <dessert>Fresh Fruit Jelly (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-12-10" weekday="Thursday" menu="Winter 2026" week="3">
+    <main>Beef Burger</main>
+    <veggie>Baked Bean Slice (Ve)</veggie>
+    <sides>Diced Potatoes or Pasta</sides>
+    <dessert>Apple Charlotte Pudding &amp; Custard (v)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-12-11" weekday="Friday" menu="Winter 2026" week="3">
+    <main>Fish Fillet Fingers</main>
+    <veggie>Margherita Pizza (v)</veggie>
+    <sides>Chips or Tricolour Pasta</sides>
+    <dessert>Chocolate Raisin Cookie (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-12-14" weekday="Monday" menu="Winter 2026" week="1">
+    <main>Pork Sausages &amp; Gravy</main>
+    <veggie>Sweet Potato &amp; Chickpea Curry (Ve)</veggie>
+    <sides>Mashed Potatoes or Brown &amp; White Rice</sides>
+    <dessert>Oat &amp; Raisin Cookie (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-12-15" weekday="Tuesday" menu="Winter 2026" week="1">
+    <main>Mexican Bean Burrito (v)</main>
+    <veggie>Mac 'n' Cheese (v)</veggie>
+    <sides>Diced Potatoes or Herby Garlic Bread</sides>
+    <dessert>Fresh Fruit Wedges (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v)</jacket-potato>
+  </day>
+  <day date="2026-12-16" weekday="Wednesday" menu="Winter 2026" week="1">
+    <main>Roast Chicken with Stuffing &amp; Gravy</main>
+    <veggie>Roast Quorn Fillet with Stuffing &amp; Gravy (Ve)</veggie>
+    <sides>Roast Potatoes or Wholemeal Pasta</sides>
+    <dessert>Fresh Fruit Jelly (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-12-17" weekday="Thursday" menu="Winter 2026" week="1">
+    <main>Chicken Pie &amp; Gravy</main>
+    <veggie>Breaded Bean &amp; Vegetable Grill (Ve)</veggie>
+    <sides>Mashed Potatoes or Pasta</sides>
+    <dessert>Apple Crumble &amp; Custard (v)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2026-12-18" weekday="Friday" menu="Winter 2026" week="1">
+    <main>Fish Fillet Fingers</main>
+    <veggie>Margherita Pizza (v)</veggie>
+    <sides>Chips or Tricolour Pasta</sides>
+    <dessert>Chocolate Brick Wall (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-01-04" weekday="Monday" menu="Winter 2026" week="1">
+    <main>Pork Sausages &amp; Gravy</main>
+    <veggie>Sweet Potato &amp; Chickpea Curry (Ve)</veggie>
+    <sides>Mashed Potatoes or Brown &amp; White Rice</sides>
+    <dessert>Oat &amp; Raisin Cookie (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-01-05" weekday="Tuesday" menu="Winter 2026" week="1">
+    <main>Mexican Bean Burrito (v)</main>
+    <veggie>Mac 'n' Cheese (v)</veggie>
+    <sides>Diced Potatoes or Herby Garlic Bread</sides>
+    <dessert>Fresh Fruit Wedges (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v)</jacket-potato>
+  </day>
+  <day date="2027-01-06" weekday="Wednesday" menu="Winter 2026" week="1">
+    <main>Roast Chicken with Stuffing &amp; Gravy</main>
+    <veggie>Roast Quorn Fillet with Stuffing &amp; Gravy (Ve)</veggie>
+    <sides>Roast Potatoes or Wholemeal Pasta</sides>
+    <dessert>Fresh Fruit Jelly (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-01-07" weekday="Thursday" menu="Winter 2026" week="1">
+    <main>Chicken Pie &amp; Gravy</main>
+    <veggie>Breaded Bean &amp; Vegetable Grill (Ve)</veggie>
+    <sides>Mashed Potatoes or Pasta</sides>
+    <dessert>Apple Crumble &amp; Custard (v)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-01-08" weekday="Friday" menu="Winter 2026" week="1">
+    <main>Fish Fillet Fingers</main>
+    <veggie>Margherita Pizza (v)</veggie>
+    <sides>Chips or Tricolour Pasta</sides>
+    <dessert>Chocolate Brick Wall (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-01-11" weekday="Monday" menu="Winter 2026" week="2">
+    <main>Chicken &amp; Sweetcorn Meatballs with Sweet &amp; Tangy Sauce</main>
+    <veggie>Sunshine Eggs with Baked Beans (v)</veggie>
+    <sides>Brown &amp; White Rice or Potato Wedges</sides>
+    <dessert>Shortbread (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-01-12" weekday="Tuesday" menu="Winter 2026" week="2">
+    <main>Chicken Curry</main>
+    <veggie>Cheese Pinwheel (v)</veggie>
+    <sides>Brown &amp; White Rice or Diced Potatoes</sides>
+    <dessert>Fresh Fruit Wedges (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-01-13" weekday="Wednesday" menu="Winter 2026" week="2">
+    <main>Roast Beef with Yorkshire Pudding &amp; Gravy</main>
+    <veggie>Quorn Pieces with Yorkshire Pudding &amp; Gravy (v)</veggie>
+    <sides>Roast Potatoes or Wholemeal Pasta</sides>
+    <dessert>Fresh Fruit Jelly (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-01-14" weekday="Thursday" menu="Winter 2026" week="2">
+    <main>Quorn Burger (v)</main>
+    <veggie>Veggie Bolognese (Ve)</veggie>
+    <sides>Potato Wedges or Spaghetti</sides>
+    <dessert>Pear &amp; Chocolate Sponge &amp; Chocolate Custard</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v)</jacket-potato>
+  </day>
+  <day date="2027-01-15" weekday="Friday" menu="Winter 2026" week="2">
+    <main>Battered Fish</main>
+    <veggie>Margherita Pizza (v)</veggie>
+    <sides>Potato Wedges or Tricolour Pasta</sides>
+    <dessert>Jammy Cookie (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Salmon Mayo, Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-01-18" weekday="Monday" menu="Winter 2026" week="3">
+    <main>Beef Bolognese</main>
+    <veggie>Vegan Quorn Sausage &amp; Gravy (Ve)</veggie>
+    <sides>Spaghetti or Potato Wedges</sides>
+    <dessert>Fresh Fruit Wedges (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-01-19" weekday="Tuesday" menu="Winter 2026" week="3">
+    <main>Quorn Hotdog (v)</main>
+    <veggie>Roasted Veg Lasagne (v)</veggie>
+    <sides>Diced Potatoes or Herby Garlic Bread</sides>
+    <dessert>Carrot Cake (v)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v)</jacket-potato>
+  </day>
+  <day date="2027-01-20" weekday="Wednesday" menu="Winter 2026" week="3">
+    <main>Roast Chicken with Stuffing &amp; Gravy</main>
+    <veggie>Beany Pasta Bake (Ve)</veggie>
+    <sides>Roast Potatoes or Wholemeal Pasta</sides>
+    <dessert>Fresh Fruit Jelly (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-01-21" weekday="Thursday" menu="Winter 2026" week="3">
+    <main>Beef Burger</main>
+    <veggie>Baked Bean Slice (Ve)</veggie>
+    <sides>Diced Potatoes or Pasta</sides>
+    <dessert>Apple Charlotte Pudding &amp; Custard (v)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-01-22" weekday="Friday" menu="Winter 2026" week="3">
+    <main>Fish Fillet Fingers</main>
+    <veggie>Margherita Pizza (v)</veggie>
+    <sides>Chips or Tricolour Pasta</sides>
+    <dessert>Chocolate Raisin Cookie (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-01-25" weekday="Monday" menu="Winter 2026" week="1">
+    <main>Pork Sausages &amp; Gravy</main>
+    <veggie>Sweet Potato &amp; Chickpea Curry (Ve)</veggie>
+    <sides>Mashed Potatoes or Brown &amp; White Rice</sides>
+    <dessert>Oat &amp; Raisin Cookie (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-01-26" weekday="Tuesday" menu="Winter 2026" week="1">
+    <main>Mexican Bean Burrito (v)</main>
+    <veggie>Mac 'n' Cheese (v)</veggie>
+    <sides>Diced Potatoes or Herby Garlic Bread</sides>
+    <dessert>Fresh Fruit Wedges (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v)</jacket-potato>
+  </day>
+  <day date="2027-01-27" weekday="Wednesday" menu="Winter 2026" week="1">
+    <main>Roast Chicken with Stuffing &amp; Gravy</main>
+    <veggie>Roast Quorn Fillet with Stuffing &amp; Gravy (Ve)</veggie>
+    <sides>Roast Potatoes or Wholemeal Pasta</sides>
+    <dessert>Fresh Fruit Jelly (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-01-28" weekday="Thursday" menu="Winter 2026" week="1">
+    <main>Chicken Pie &amp; Gravy</main>
+    <veggie>Breaded Bean &amp; Vegetable Grill (Ve)</veggie>
+    <sides>Mashed Potatoes or Pasta</sides>
+    <dessert>Apple Crumble &amp; Custard (v)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-01-29" weekday="Friday" menu="Winter 2026" week="1">
+    <main>Fish Fillet Fingers</main>
+    <veggie>Margherita Pizza (v)</veggie>
+    <sides>Chips or Tricolour Pasta</sides>
+    <dessert>Chocolate Brick Wall (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-02-01" weekday="Monday" menu="Winter 2026" week="2">
+    <main>Chicken &amp; Sweetcorn Meatballs with Sweet &amp; Tangy Sauce</main>
+    <veggie>Sunshine Eggs with Baked Beans (v)</veggie>
+    <sides>Brown &amp; White Rice or Potato Wedges</sides>
+    <dessert>Shortbread (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-02-02" weekday="Tuesday" menu="Winter 2026" week="2">
+    <main>Chicken Curry</main>
+    <veggie>Cheese Pinwheel (v)</veggie>
+    <sides>Brown &amp; White Rice or Diced Potatoes</sides>
+    <dessert>Fresh Fruit Wedges (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-02-03" weekday="Wednesday" menu="Winter 2026" week="2">
+    <main>Roast Beef with Yorkshire Pudding &amp; Gravy</main>
+    <veggie>Quorn Pieces with Yorkshire Pudding &amp; Gravy (v)</veggie>
+    <sides>Roast Potatoes or Wholemeal Pasta</sides>
+    <dessert>Fresh Fruit Jelly (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-02-04" weekday="Thursday" menu="Winter 2026" week="2">
+    <main>Quorn Burger (v)</main>
+    <veggie>Veggie Bolognese (Ve)</veggie>
+    <sides>Potato Wedges or Spaghetti</sides>
+    <dessert>Pear &amp; Chocolate Sponge &amp; Chocolate Custard</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v)</jacket-potato>
+  </day>
+  <day date="2027-02-05" weekday="Friday" menu="Winter 2026" week="2">
+    <main>Battered Fish</main>
+    <veggie>Margherita Pizza (v)</veggie>
+    <sides>Potato Wedges or Tricolour Pasta</sides>
+    <dessert>Jammy Cookie (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Salmon Mayo, Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-02-08" weekday="Monday" menu="Winter 2026" week="3">
+    <main>Beef Bolognese</main>
+    <veggie>Vegan Quorn Sausage &amp; Gravy (Ve)</veggie>
+    <sides>Spaghetti or Potato Wedges</sides>
+    <dessert>Fresh Fruit Wedges (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-02-09" weekday="Tuesday" menu="Winter 2026" week="3">
+    <main>Quorn Hotdog (v)</main>
+    <veggie>Roasted Veg Lasagne (v)</veggie>
+    <sides>Diced Potatoes or Herby Garlic Bread</sides>
+    <dessert>Carrot Cake (v)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v)</jacket-potato>
+  </day>
+  <day date="2027-02-10" weekday="Wednesday" menu="Winter 2026" week="3">
+    <main>Roast Chicken with Stuffing &amp; Gravy</main>
+    <veggie>Beany Pasta Bake (Ve)</veggie>
+    <sides>Roast Potatoes or Wholemeal Pasta</sides>
+    <dessert>Fresh Fruit Jelly (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-02-11" weekday="Thursday" menu="Winter 2026" week="3">
+    <main>Beef Burger</main>
+    <veggie>Baked Bean Slice (Ve)</veggie>
+    <sides>Diced Potatoes or Pasta</sides>
+    <dessert>Apple Charlotte Pudding &amp; Custard (v)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-02-12" weekday="Friday" menu="Winter 2026" week="3">
+    <main>Fish Fillet Fingers</main>
+    <veggie>Margherita Pizza (v)</veggie>
+    <sides>Chips or Tricolour Pasta</sides>
+    <dessert>Chocolate Raisin Cookie (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-02-22" weekday="Monday" menu="Winter 2026" week="1">
+    <main>Pork Sausages &amp; Gravy</main>
+    <veggie>Sweet Potato &amp; Chickpea Curry (Ve)</veggie>
+    <sides>Mashed Potatoes or Brown &amp; White Rice</sides>
+    <dessert>Oat &amp; Raisin Cookie (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-02-23" weekday="Tuesday" menu="Winter 2026" week="1">
+    <main>Mexican Bean Burrito (v)</main>
+    <veggie>Mac 'n' Cheese (v)</veggie>
+    <sides>Diced Potatoes or Herby Garlic Bread</sides>
+    <dessert>Fresh Fruit Wedges (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v)</jacket-potato>
+  </day>
+  <day date="2027-02-24" weekday="Wednesday" menu="Winter 2026" week="1">
+    <main>Roast Chicken with Stuffing &amp; Gravy</main>
+    <veggie>Roast Quorn Fillet with Stuffing &amp; Gravy (Ve)</veggie>
+    <sides>Roast Potatoes or Wholemeal Pasta</sides>
+    <dessert>Fresh Fruit Jelly (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-02-25" weekday="Thursday" menu="Winter 2026" week="1">
+    <main>Chicken Pie &amp; Gravy</main>
+    <veggie>Breaded Bean &amp; Vegetable Grill (Ve)</veggie>
+    <sides>Mashed Potatoes or Pasta</sides>
+    <dessert>Apple Crumble &amp; Custard (v)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-02-26" weekday="Friday" menu="Winter 2026" week="1">
+    <main>Fish Fillet Fingers</main>
+    <veggie>Margherita Pizza (v)</veggie>
+    <sides>Chips or Tricolour Pasta</sides>
+    <dessert>Chocolate Brick Wall (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-03-01" weekday="Monday" menu="Winter 2026" week="2">
+    <main>Chicken &amp; Sweetcorn Meatballs with Sweet &amp; Tangy Sauce</main>
+    <veggie>Sunshine Eggs with Baked Beans (v)</veggie>
+    <sides>Brown &amp; White Rice or Potato Wedges</sides>
+    <dessert>Shortbread (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-03-02" weekday="Tuesday" menu="Winter 2026" week="2">
+    <main>Chicken Curry</main>
+    <veggie>Cheese Pinwheel (v)</veggie>
+    <sides>Brown &amp; White Rice or Diced Potatoes</sides>
+    <dessert>Fresh Fruit Wedges (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-03-03" weekday="Wednesday" menu="Winter 2026" week="2">
+    <main>Roast Beef with Yorkshire Pudding &amp; Gravy</main>
+    <veggie>Quorn Pieces with Yorkshire Pudding &amp; Gravy (v)</veggie>
+    <sides>Roast Potatoes or Wholemeal Pasta</sides>
+    <dessert>Fresh Fruit Jelly (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-03-04" weekday="Thursday" menu="Winter 2026" week="2">
+    <main>Quorn Burger (v)</main>
+    <veggie>Veggie Bolognese (Ve)</veggie>
+    <sides>Potato Wedges or Spaghetti</sides>
+    <dessert>Pear &amp; Chocolate Sponge &amp; Chocolate Custard</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v)</jacket-potato>
+  </day>
+  <day date="2027-03-05" weekday="Friday" menu="Winter 2026" week="2">
+    <main>Battered Fish</main>
+    <veggie>Margherita Pizza (v)</veggie>
+    <sides>Potato Wedges or Tricolour Pasta</sides>
+    <dessert>Jammy Cookie (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Salmon Mayo, Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-03-08" weekday="Monday" menu="Winter 2026" week="3">
+    <main>Beef Bolognese</main>
+    <veggie>Vegan Quorn Sausage &amp; Gravy (Ve)</veggie>
+    <sides>Spaghetti or Potato Wedges</sides>
+    <dessert>Fresh Fruit Wedges (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-03-09" weekday="Tuesday" menu="Winter 2026" week="3">
+    <main>Quorn Hotdog (v)</main>
+    <veggie>Roasted Veg Lasagne (v)</veggie>
+    <sides>Diced Potatoes or Herby Garlic Bread</sides>
+    <dessert>Carrot Cake (v)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v)</jacket-potato>
+  </day>
+  <day date="2027-03-10" weekday="Wednesday" menu="Winter 2026" week="3">
+    <main>Roast Chicken with Stuffing &amp; Gravy</main>
+    <veggie>Beany Pasta Bake (Ve)</veggie>
+    <sides>Roast Potatoes or Wholemeal Pasta</sides>
+    <dessert>Fresh Fruit Jelly (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-03-11" weekday="Thursday" menu="Winter 2026" week="3">
+    <main>Beef Burger</main>
+    <veggie>Baked Bean Slice (Ve)</veggie>
+    <sides>Diced Potatoes or Pasta</sides>
+    <dessert>Apple Charlotte Pudding &amp; Custard (v)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-03-12" weekday="Friday" menu="Winter 2026" week="3">
+    <main>Fish Fillet Fingers</main>
+    <veggie>Margherita Pizza (v)</veggie>
+    <sides>Chips or Tricolour Pasta</sides>
+    <dessert>Chocolate Raisin Cookie (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-03-15" weekday="Monday" menu="Winter 2026" week="1">
+    <main>Pork Sausages &amp; Gravy</main>
+    <veggie>Sweet Potato &amp; Chickpea Curry (Ve)</veggie>
+    <sides>Mashed Potatoes or Brown &amp; White Rice</sides>
+    <dessert>Oat &amp; Raisin Cookie (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-03-16" weekday="Tuesday" menu="Winter 2026" week="1">
+    <main>Mexican Bean Burrito (v)</main>
+    <veggie>Mac 'n' Cheese (v)</veggie>
+    <sides>Diced Potatoes or Herby Garlic Bread</sides>
+    <dessert>Fresh Fruit Wedges (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v)</jacket-potato>
+  </day>
+  <day date="2027-03-17" weekday="Wednesday" menu="Winter 2026" week="1">
+    <main>Roast Chicken with Stuffing &amp; Gravy</main>
+    <veggie>Roast Quorn Fillet with Stuffing &amp; Gravy (Ve)</veggie>
+    <sides>Roast Potatoes or Wholemeal Pasta</sides>
+    <dessert>Fresh Fruit Jelly (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-03-18" weekday="Thursday" menu="Winter 2026" week="1">
+    <main>Chicken Pie &amp; Gravy</main>
+    <veggie>Breaded Bean &amp; Vegetable Grill (Ve)</veggie>
+    <sides>Mashed Potatoes or Pasta</sides>
+    <dessert>Apple Crumble &amp; Custard (v)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-03-19" weekday="Friday" menu="Winter 2026" week="1">
+    <main>Fish Fillet Fingers</main>
+    <veggie>Margherita Pizza (v)</veggie>
+    <sides>Chips or Tricolour Pasta</sides>
+    <dessert>Chocolate Brick Wall (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-03-22" weekday="Monday" menu="Winter 2026" week="2">
+    <main>Chicken &amp; Sweetcorn Meatballs with Sweet &amp; Tangy Sauce</main>
+    <veggie>Sunshine Eggs with Baked Beans (v)</veggie>
+    <sides>Brown &amp; White Rice or Potato Wedges</sides>
+    <dessert>Shortbread (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-03-23" weekday="Tuesday" menu="Winter 2026" week="2">
+    <main>Chicken Curry</main>
+    <veggie>Cheese Pinwheel (v)</veggie>
+    <sides>Brown &amp; White Rice or Diced Potatoes</sides>
+    <dessert>Fresh Fruit Wedges (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-03-24" weekday="Wednesday" menu="Winter 2026" week="2">
+    <main>Roast Beef with Yorkshire Pudding &amp; Gravy</main>
+    <veggie>Quorn Pieces with Yorkshire Pudding &amp; Gravy (v)</veggie>
+    <sides>Roast Potatoes or Wholemeal Pasta</sides>
+    <dessert>Fresh Fruit Jelly (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Tuna Mayo</jacket-potato>
+  </day>
+  <day date="2027-03-25" weekday="Thursday" menu="Winter 2026" week="2">
+    <main>Quorn Burger (v)</main>
+    <veggie>Veggie Bolognese (Ve)</veggie>
+    <sides>Potato Wedges or Spaghetti</sides>
+    <dessert>Pear &amp; Chocolate Sponge &amp; Chocolate Custard</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v)</jacket-potato>
+  </day>
+  <day date="2027-03-26" weekday="Friday" menu="Winter 2026" week="2">
+    <main>Battered Fish</main>
+    <veggie>Margherita Pizza (v)</veggie>
+    <sides>Potato Wedges or Tricolour Pasta</sides>
+    <dessert>Jammy Cookie (Ve)</dessert>
+    <jacket-potato>Grated Cheese (v), Baked Beans (Ve), Cheese &amp; Beans (v), Salmon Mayo, Tuna Mayo</jacket-potato>
+  </day>
+</lunch-menus>

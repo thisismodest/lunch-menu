@@ -1,9 +1,11 @@
 #!/bin/sh
 
-# Regenerates menus/index.json whenever menu files are staged, and stages the result.
+# Regenerates menus/index.json and menu.xml whenever menu files are staged,
+# and stages the results.
 # Enable once per clone with: git config core.hooksPath .githooks
 
 if git diff --cached --name-only | grep -q '^menus/.*\.json$'; then
   sh scripts/build-menu-index.sh || exit 1
-  git add menus/index.json
+  sh scripts/build-menu-xml.sh || exit 1
+  git add menus/index.json menu.xml
 fi

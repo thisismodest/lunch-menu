@@ -11,6 +11,7 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="modest-ui.min.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="alternate" type="application/xml" title="Lunch menu by date" href="menu.xml" />
 
     <!-- Apply a saved theme before the first paint, so there's no flash (see app.js) -->
     <script>
@@ -63,13 +64,22 @@
     <main>
       <div id="preview-banner" hidden></div>
       <div class="week-selector" id="week-selector"></div>
-      <div id="menu-container"></div>
+      <div id="menu-container">
+        <!-- Replaced by app.js. Kept for tools that read the page without running JavaScript. -->
+        <div class="message-block">
+          <p class="mdst-p mdst-p--muted">
+            Loading the menu… This page needs JavaScript. AI assistants and other tools can read every school day's menu, listed by
+            date, at <a href="https://thisismodest.com/lunch-menu/menu.xml">https://thisismodest.com/lunch-menu/menu.xml</a>.
+          </p>
+        </div>
+      </div>
     </main>
 
     <footer class="site-footer">
       <p class="mdst-p mdst-p--sm mdst-p--muted site-footer-text">
         This is <em>just</em> a modest tool made by an easily confused dad.<br />
-        It is not affiliated with any school or HCL, may not be accurate, and no responsibility is accepted for its content.
+        It is not affiliated with any school or HCL, may not be accurate, and no responsibility is accepted for its content.<br />
+        XML version of the menu can be found <a href="https://thisismodest.com/lunch-menu/menu.xml">here</a>
       </p>
     </footer>
 
