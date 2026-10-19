@@ -6,14 +6,16 @@ A simple, static page that shows the weekly school lunch menu provided by HCL. B
 
 | File / Directory              | Purpose                                                                               |
 | ----------------------------- | ------------------------------------------------------------------------------------- |
-| `index.html`                  | The main page — pure HTML, no inline styles or scripts                                |
+| `index.html`                  | The main page — no inline styles; the only inline script is the analytics snippet     |
 | `styles.css`                  | All custom styles (theme tokens, layout, components)                                  |
 | `app.js`                      | All JavaScript (menu loading, date resolution, rendering)                             |
-| `modest-ui.min.css`           | Minified copy of [modest-ui](https://github.com/thisismodest/modest-ui) CSS framework |
+| `modest-ui.min.css`           | Trimmed [modest-ui](https://modest-ui.com) v2 build (see below)                       |
 | `favicon.svg`                 | Fork & knife icon used as favicon and header logo                                     |
 | `menus/`                      | Menu data as dated JSON files                                                         |
 | `menus/index.json`            | Auto-generated manifest listing all menu files                                        |
 | `scripts/build-menu-index.sh` | Script to regenerate `menus/index.json` from the menu files                           |
+| `scripts/build-modest-ui.sh`  | Script to rebuild `modest-ui.min.css` from the `mdst-ui` npm package                  |
+| `.githooks/pre-commit`        | Pre-commit hook that runs the index script when menu files are staged                 |
 
 ## How it works
 
@@ -21,6 +23,8 @@ Menu data lives in `menus/` as individual JSON files, each named with the date t
 
 - **Current menu** — the latest file whose start date is ≤ today.
 - **Next menu** — the file immediately after the current one, if it exists.
+
+Only those two menu files are fetched, so old menus can stay in `menus/` as an archive.
 
 When a next menu is available, a preview banner appears on the site so you can browse it before it goes live. The switchover is automatic — once the start date of the next menu arrives, it becomes the current menu. No manual steps needed.
 
@@ -76,6 +80,14 @@ git commit -m "Add Autumn 2026 menu"
 
 The pre-commit hook will automatically regenerate `menus/index.json` and include it in the commit. Push, and you're done — the site will show a preview banner immediately, and switch over on the start date.
 
+### Enabling the pre-commit hook
+
+The hook lives in `.githooks/` so it's version-controlled. Git doesn't pick it up automatically — enable it once per clone:
+
+```sh
+git config core.hooksPath .githooks
+```
+
 ### Manually rebuilding the index
 
 If needed, you can regenerate `menus/index.json` at any time:
@@ -92,10 +104,11 @@ In `app.js`, inside `init()`, there are commented-out lines for simulating speci
 
 ```js
 const now = new Date();
-// const now = new Date("2026-04-05"); // between menus — current active, preview banner visible
-// const now = new Date("2026-04-13"); // switchover day — Summer 2026 becomes active (Week 1)
-// const now = new Date("2026-06-15"); // mid-summer — Summer 2026 active (Week 3)
-// const now = new Date("2026-11-01"); // past all menus — "needs updating" message
+// const now = new Date("2026-10-28"); // half term — Summer 2026 active, no school week, preview banner visible
+// const now = new Date("2026-11-02"); // switchover day — Winter 2026 becomes active (Week 1)
+// const now = new Date("2027-01-04"); // after Christmas — Winter 2026 active (Week 1)
+// const now = new Date("2027-02-08"); // mid-winter — Winter 2026 active (Week 3)
+// const now = new Date("2027-04-12"); // after Easter — Winter 2026 still current, but no matching school week
 ```
 
 Uncomment one (and comment out the live line) to test different scenarios.
@@ -106,3 +119,21 @@ Uncomment one (and comment out the live line) to test different scenarios.
 - The site is marked `noindex, nofollow` so it won't appear in search engines.
 - It's not affiliated with any school or HCL — just a convenience tool.
 - No build step, no frameworks, no dependencies beyond the single modest-ui CSS file.
+
+## modest-ui
+
+`modest-ui.min.css` is a trimmed build of [modest-ui](https://modest-ui.com) v2 containing only the parts this site uses (tokens, reset, typography, tag, button, banner). The npm package is **`mdst-ui`** — the `modest-ui` package on npm is an unrelated Vue library.
+
+To update it, or after adding a component to the list in the script:
+
+```sh
+sh scripts/build-modest-ui.sh        # latest 2.x; pass a version to pin, e.g. 2.0.0
+```
+
+Requires npm and `jq`; minifies with `npx lightningcss-cli`. The site itself still has no build step.
+
+How the site uses it:
+
+- `.mdst-ui` is on `<body>`, which scopes modest-ui's reset and classless styles to the page.
+- Page sections are spaced by modest-ui's flow spacing (`--mdst-flow-space` in `styles.css`). It only applies inside unclassed containers, which is why `<main>` has no class. Use the `hidden` attribute to remove a section without leaving a gap.
+- Everything in `styles.css` sits outside modest-ui's cascade layer, so it always wins.

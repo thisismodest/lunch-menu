@@ -1,0 +1,129 @@
+{
+  "label": "Winter 2026",
+  "genericJacketToppings": ["Grated Cheese (v)", "Baked Beans (Ve)", "Cheese & Beans (v)"],
+  "weeks": [
+    {
+      "week": 1,
+      "weekStart": ["2026-11-02", "2026-11-23", "2026-12-14", "2027-01-04", "2027-01-25", "2027-02-22", "2027-03-15"],
+      "days": {
+        "monday": {
+          "main": "Pork Sausages & Gravy",
+          "veggie": "Sweet Potato & Chickpea Curry (Ve)",
+          "sides": "Mashed Potatoes or Brown & White Rice",
+          "dessert": "Oat & Raisin Cookie (Ve)",
+          "extraJacketToppings": ["Tuna Mayo"]
+        },
+        "tuesday": {
+          "main": "Mexican Bean Burrito (v)",
+          "veggie": "Mac 'n' Cheese (v)",
+          "sides": "Diced Potatoes or Herby Garlic Bread",
+          "dessert": "Fresh Fruit Wedges (Ve)",
+          "extraJacketToppings": []
+        },
+        "wednesday": {
+          "main": "Roast Chicken with Stuffing & Gravy",
+          "veggie": "Roast Quorn Fillet with Stuffing & Gravy (Ve)",
+          "sides": "Roast Potatoes or Wholemeal Pasta",
+          "dessert": "Fresh Fruit Jelly (Ve)",
+          "extraJacketToppings": ["Tuna Mayo"]
+        },
+        "thursday": {
+          "main": "Chicken Pie & Gravy",
+          "veggie": "Breaded Bean & Vegetable Grill (Ve)",
+          "sides": "Mashed Potatoes or Pasta",
+          "dessert": "Apple Crumble & Custard (v)",
+          "extraJacketToppings": ["Tuna Mayo"]
+        },
+        "friday": {
+          "main": "Fish Fillet Fingers",
+          "veggie": "Margherita Pizza (v)",
+          "sides": "Chips or Tricolour Pasta",
+          "dessert": "Chocolate Brick Wall (Ve)",
+          "extraJacketToppings": ["Tuna Mayo"]
+        }
+      }
+    },
+    {
+      "week": 2,
+      "weekStart": ["2026-11-09", "2026-11-30", "2027-01-11", "2027-02-01", "2027-03-01", "2027-03-22"],
+      "days": {
+        "monday": {
+          "main": "Chicken & Sweetcorn Meatballs with Sweet & Tangy Sauce",
+          "veggie": "Sunshine Eggs with Baked Beans (v)",
+          "sides": "Brown & White Rice or Potato Wedges",
+          "dessert": "Shortbread (Ve)",
+          "extraJacketToppings": ["Tuna Mayo"]
+        },
+        "tuesday": {
+          "main": "Chicken Curry",
+          "veggie": "Cheese Pinwheel (v)",
+          "sides": "Brown & White Rice or Diced Potatoes",
+          "dessert": "Fresh Fruit Wedges (Ve)",
+          "extraJacketToppings": ["Tuna Mayo"]
+        },
+        "wednesday": {
+          "main": "Roast Beef with Yorkshire Pudding & Gravy",
+          "veggie": "Quorn Pieces with Yorkshire Pudding & Gravy (v)",
+          "sides": "Roast Potatoes or Wholemeal Pasta",
+          "dessert": "Fresh Fruit Jelly (Ve)",
+          "extraJacketToppings": ["Tuna Mayo"]
+        },
+        "thursday": {
+          "main": "Quorn Burger (v)",
+          "veggie": "Veggie Bolognese (Ve)",
+          "sides": "Potato Wedges or Spaghetti",
+          "dessert": "Pear & Chocolate Sponge & Chocolate Custard",
+          "extraJacketToppings": []
+        },
+        "friday": {
+          "main": "Battered Fish",
+          "veggie": "Margherita Pizza (v)",
+          "sides": "Potato Wedges or Tricolour Pasta",
+          "dessert": "Jammy Cookie (Ve)",
+          "extraJacketToppings": ["Salmon Mayo", "Tuna Mayo"]
+        }
+      }
+    },
+    {
+      "week": 3,
+      "weekStart": ["2026-11-16", "2026-12-07", "2027-01-18", "2027-02-08", "2027-03-08"],
+      "days": {
+        "monday": {
+          "main": "Beef Bolognese",
+          "veggie": "Vegan Quorn Sausage & Gravy (Ve)",
+          "sides": "Spaghetti or Potato Wedges",
+          "dessert": "Fresh Fruit Wedges (Ve)",
+          "extraJacketToppings": ["Tuna Mayo"]
+        },
+        "tuesday": {
+          "main": "Quorn Hotdog (v)",
+          "veggie": "Roasted Veg Lasagne (v)",
+          "sides": "Diced Potatoes or Herby Garlic Bread",
+          "dessert": "Carrot Cake (v)",
+          "extraJacketToppings": []
+        },
+        "wednesday": {
+          "main": "Roast Chicken with Stuffing & Gravy",
+          "veggie": "Beany Pasta Bake (Ve)",
+          "sides": "Roast Potatoes or Wholemeal Pasta",
+          "dessert": "Fresh Fruit Jelly (Ve)",
+          "extraJacketToppings": ["Tuna Mayo"]
+        },
+        "thursday": {
+          "main": "Beef Burger",
+          "veggie": "Baked Bean Slice (Ve)",
+          "sides": "Diced Potatoes or Pasta",
+          "dessert": "Apple Charlotte Pudding & Custard (v)",
+          "extraJacketToppings": ["Tuna Mayo"]
+        },
+        "friday": {
+          "main": "Fish Fillet Fingers",
+          "veggie": "Margherita Pizza (v)",
+          "sides": "Chips or Tricolour Pasta",
+          "dessert": "Chocolate Raisin Cookie (Ve)",
+          "extraJacketToppings": ["Tuna Mayo"]
+        }
+      }
+    }
+  ]
+}

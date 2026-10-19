@@ -16,6 +16,7 @@
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
+        // biome-ignore lint/complexity/noArguments: gtag.js expects the Arguments object, not an array
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
@@ -23,7 +24,7 @@
       gtag("config", "G-8CNWGBKZHH");
     </script>
   </head>
-  <body>
+  <body class="mdst-ui">
     <header class="site-header">
       <div class="site-header-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true">
@@ -41,7 +42,7 @@
         </svg>
       </div>
       <h1 class="mdst-h1">School Meals</h1>
-      <p class="mdst-p mdst-p--sm mdst-p--muted site-header-subtitle">Today's Lunch Menu</p>
+      <p class="mdst-p mdst-p--sm mdst-p--muted">Today's Lunch Menu</p>
       <div class="site-header-meta">
         <span class="mdst-p mdst-p--sm mdst-p--muted" id="current-date-display"></span>
         <span class="site-header-meta-divider"></span>
@@ -49,8 +50,8 @@
       </div>
     </header>
 
-    <main class="site-main">
-      <div id="preview-banner" style="display: none"></div>
+    <main>
+      <div id="preview-banner" hidden></div>
       <div class="week-selector" id="week-selector"></div>
       <div id="menu-container"></div>
     </main>
