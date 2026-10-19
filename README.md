@@ -6,7 +6,7 @@ A simple, static page that shows the weekly school lunch menu provided by HCL. B
 
 | File / Directory              | Purpose                                                                               |
 | ----------------------------- | ------------------------------------------------------------------------------------- |
-| `index.html`                  | The main page — no inline styles; the only inline script is the analytics snippet     |
+| `index.html`                  | The main page — no inline styles; inline scripts are only analytics and theme restore |
 | `styles.css`                  | All custom styles (theme tokens, layout, components)                                  |
 | `app.js`                      | All JavaScript (menu loading, date resolution, rendering)                             |
 | `modest-ui.min.css`           | Trimmed [modest-ui](https://modest-ui.com) v2 build (see below)                       |
@@ -137,3 +137,4 @@ How the site uses it:
 - `.mdst-ui` is on `<body>`, which scopes modest-ui's reset and classless styles to the page.
 - Page sections are spaced by modest-ui's flow spacing (`--mdst-flow-space` in `styles.css`). It only applies inside unclassed containers, which is why `<main>` has no class. Use the `hidden` attribute to remove a section without leaving a gap.
 - Everything in `styles.css` sits outside modest-ui's cascade layer, so it always wins.
+- Light and dark themes follow the device setting until someone uses the toggle in the header. Theme colours in `styles.css` are `light-dark()` pairs, so the toggle only sets `data-theme` on `<html>` (which sets `color-scheme`) and saves the choice in `localStorage`. A small script in `<head>` re-applies it before the first paint. Picking the device's own theme clears the choice. Browsers without `light-dark()` get the light theme and no toggle.

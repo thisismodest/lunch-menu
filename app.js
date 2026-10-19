@@ -272,6 +272,55 @@ function showWeek(weekNumber) {
   renderMenu();
 }
 
+// Theme
+
+const darkQuery = matchMedia("(prefers-color-scheme: dark)");
+
+// Each icon shows the theme the button switches to
+const themeIcons = {
+  dark: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" /></svg>',
+  light:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></svg>',
+};
+
+function getSystemTheme() {
+  return darkQuery.matches ? "dark" : "light";
+}
+
+function getTheme() {
+  return document.documentElement.dataset.theme || getSystemTheme();
+}
+
+function renderThemeToggle() {
+  const next = getTheme() === "dark" ? "light" : "dark";
+  const button = document.getElementById("theme-toggle");
+  button.innerHTML = themeIcons[next];
+  button.setAttribute("aria-label", `Switch to ${next} theme`);
+  button.title = `Switch to ${next} theme`;
+}
+
+// Choosing the device's own theme goes back to following the device
+function toggleTheme() {
+  const next = getTheme() === "dark" ? "light" : "dark";
+  const root = document.documentElement;
+
+  try {
+    if (next === getSystemTheme()) {
+      delete root.dataset.theme;
+      localStorage.removeItem("theme");
+    } else {
+      root.dataset.theme = next;
+      localStorage.setItem("theme", next);
+    }
+  } catch {
+    // Storage can be unavailable (e.g. some private modes); the theme still
+    // changes for this visit
+    root.dataset.theme = next;
+  }
+
+  renderThemeToggle();
+}
+
 // Init
 
 async function fetchJSON(url) {
@@ -289,6 +338,10 @@ async function init() {
   // const now = new Date("2027-04-12"); // after Easter — Winter 2026 still current, but no matching school week
 
   appDate = now;
+
+  renderThemeToggle();
+  document.getElementById("theme-toggle").addEventListener("click", toggleTheme);
+  darkQuery.addEventListener("change", renderThemeToggle);
 
   document.getElementById("current-date-display").innerText = now.toLocaleDateString("en-GB", {
     dateStyle: "full",

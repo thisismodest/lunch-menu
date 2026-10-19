@@ -1,6 +1,10 @@
 :root {
+  /* Follows the device unless the theme toggle has set data-theme */
+  color-scheme: light dark;
+
+  /* Light colours, used as-is by browsers without light-dark() */
   --mdst-color-fg: #3b2e2a;
-  --mdst-color-bg: #fff7f3;
+  --mdst-color-bg: #fff;
   --mdst-color-border: #eacfc4;
   --mdst-color-muted: #9c8178;
   --mdst-color-subtle: #fceee8;
@@ -8,13 +12,37 @@
   --mdst-color-danger: #d95a4e;
   --mdst-color-warning: #8a6d00;
   --mdst-color-success: #5aab7b;
+  --color-yellow: #d4a017;
+
   --mdst-radius: 0.75rem;
   --mdst-border-width: 1px;
 
   /* Spaces the page sections (header, main and the blocks in it) */
   --mdst-flow-space: var(--mdst-space-lg);
+}
 
-  --color-yellow: #d4a017;
+/* light-dark(light, dark) picks by the root's color-scheme */
+@supports (color: light-dark(#000, #fff)) {
+  :root {
+    --mdst-color-fg: light-dark(#3b2e2a, #f2e6e1);
+    --mdst-color-bg: light-dark(#fff, #1a1513);
+    --mdst-color-border: light-dark(#eacfc4, #45362f);
+    --mdst-color-muted: light-dark(#9c8178, #a8928a);
+    --mdst-color-subtle: light-dark(#fceee8, #2a211e);
+    --mdst-color-focus: light-dark(#e8734a, #f08a63);
+    --mdst-color-danger: light-dark(#d95a4e, #ec7b70);
+    --mdst-color-warning: light-dark(#8a6d00, #e3b341);
+    --mdst-color-success: light-dark(#5aab7b, #6cc290);
+    --color-yellow: light-dark(#d4a017, #e0ad2c);
+  }
+
+  :root[data-theme="light"] {
+    color-scheme: light;
+  }
+
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+  }
 }
 
 /* Layout */
@@ -37,6 +65,7 @@ main {
 /* Header */
 
 .site-header {
+  position: relative;
   text-align: center;
   padding: var(--mdst-space-xl) var(--mdst-space-md);
   background: linear-gradient(180deg, var(--mdst-color-subtle) 0%, var(--mdst-color-bg) 100%);
@@ -56,6 +85,24 @@ main {
 
 .site-header h1 {
   letter-spacing: -0.025em;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: var(--mdst-space-md);
+  right: var(--mdst-space-md);
+}
+
+/* Without light-dark() the theme can't change, so there's nothing to toggle */
+@supports not (color: light-dark(#000, #fff)) {
+  .theme-toggle {
+    display: none;
+  }
+}
+
+.theme-toggle svg {
+  width: 1.125rem;
+  height: 1.125rem;
 }
 
 .site-header-meta {
@@ -92,6 +139,18 @@ main {
 
 .preview-banner {
   background: var(--mdst-color-subtle);
+}
+
+/* Narrow screens: text on its own line, everything centred */
+@media (max-width: 768px) {
+  .preview-banner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .preview-banner .mdst-banner__content {
+    flex-basis: 100%;
+  }
 }
 
 /* Week selector */
@@ -221,6 +280,11 @@ main {
 
 .meal-value {
   font-size: var(--mdst-text-sm);
+}
+
+/* <mark> text is black by default, even in dark mode */
+.meal-value .mdst-mark {
+  color: inherit;
 }
 
 @container (max-width: 200px) {
